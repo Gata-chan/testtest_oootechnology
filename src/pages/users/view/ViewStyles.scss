@@ -1,0 +1,29 @@
+@use '../../components/stylevariables/variables';
+
+.view-page__box {
+    margin-left: variables.$page-paddingleft;
+    width: auto;
+    flex-grow: 1;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.view-page-nav{
+    margin-top: 35px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.view-page-table {
+    padding-left: variables.$page-paddingleft;
+    padding-right: variables.$page-paddingleft;
+    font-family: "WorkSans-Regular";
+    padding-bottom: 8%;
+    width: auto;
+
+}
+
+.view-page-404 {
+    font-family: "WorkSans-Regular";
+    text-align: center;
+}

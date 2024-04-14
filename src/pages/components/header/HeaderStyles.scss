@@ -1,0 +1,34 @@
+@use '../stylevariables/variables';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: variables.$color-bgray;
+    font-family: "WorkSans-Regular";
+    color: white;
+    width: 100vw;
+    height: 7vh;
+
+    nav {
+        padding-left: variables.$page-paddingleft;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            align-items: baseline;
+            justify-content: space-between;
+            
+            a {
+                color: white;
+                text-decoration: none;
+
+                :hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

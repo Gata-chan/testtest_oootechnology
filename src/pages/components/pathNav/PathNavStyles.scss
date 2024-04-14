@@ -1,0 +1,27 @@
+@use '../stylevariables/variables';
+
+.path-nav-component {
+    font-family: "WorkSans-Regular";
+    display: flex;
+    div{
+        margin-left: variables.$page-paddingleft;
+        margin-right: variables.$page-paddingleft;
+        width: auto;
+        flex-grow: 1;
+        border-radius: 5px 5px 5px 5px;
+        background-color: rgba($color: variables.$color-lavanderweb, $alpha: 0.45);
+        
+        p{
+            padding-left: 50px;
+
+            a{
+                text-decoration: none;
+                color: blueviolet;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+@use '../stylevariables/variables';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba($color: variables.$color-bgray, $alpha: 0.15);
+    font-family: "WorkSans-Light";
+    width: 100vw;
+    height: 4vh;
+    p{
+        color: gray;
+        margin: 0;
+        padding: 0;
+        padding-left: variables.$page-paddingleft;
+        padding-top: 10px;
+    }
+}

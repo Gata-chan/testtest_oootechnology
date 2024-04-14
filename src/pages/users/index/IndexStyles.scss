@@ -1,0 +1,94 @@
+@use '../../components/stylevariables/variables';
+
+
+.index-page__box {
+    margin-left: variables.$page-paddingleft;
+    width: auto;
+    flex-grow: 1;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.index-page-nav{
+    margin-top: 35px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.index-page__favourite_food_th {
+    width: 10%;
+}
+
+.index-page__table {
+    padding-left: variables.$page-paddingleft;
+    padding-right: variables.$page-paddingleft;
+    font-family: "WorkSans-Regular";
+    padding-bottom: 8%;
+    width: auto;
+    table-layout: fixed;
+    table{
+        width: auto;
+        border: none;
+        border-spacing: 0;
+        table-layout: fixed;
+        thead {
+            th {
+                font-weight: bold;
+                text-align: left;
+                border: none;
+                word-wrap: break-word;
+                padding: 10px 15px;
+                background: rgba($color: variables.$color-lavanderweb, $alpha: 0.45);
+                
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                    h2 {
+                        font-size: 1em;
+                    }
+            }
+            tr th:first-child, .table tbody tr td:first-child {
+                border-left: none;
+            }
+            tr th:last-child, .table tbody tr td:last-child {
+                border-right: none;
+            }
+
+        }
+        tbody {
+            td {
+                text-align: left;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                padding: 10px 15px;
+                font-size: 14px;
+                vertical-align: top;
+                width: auto;
+                word-wrap: break-word;
+            }
+            tr:nth-child(even){
+                background: rgba($color: variables.$color-lavanderweb, $alpha: 0.25);
+            }
+        }
+    }
+}
+
+.index-page__table__favourite__food {
+    display: flex;
+    flex-wrap: wrap;
+}
+.index-page__table__buttons{
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.base-TablePagination-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    padding-right: 60%;
+}
+
+.base-TablePagination-spacer {
+    display: none;
+}

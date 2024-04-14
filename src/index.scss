@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url(./fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: "WorkSans-Bold";
+    src: url(./fonts/Work_Sans/static/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "WorkSans-Light";
+    src: url(./fonts/Work_Sans/static/WorkSans-Light.ttf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

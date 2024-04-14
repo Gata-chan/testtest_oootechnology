@@ -1,0 +1,42 @@
+@use '../../components/stylevariables/variables';
+
+.update-page-nav {
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.update-page-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: variables.$page-paddingleft;
+    padding-right: variables.$page-paddingleft;
+    font-family: "WorkSans-Regular";
+    padding-bottom: 8%;
+    width: auto;
+}
+
+.update-page-form__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.update-page-form__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+.error {
+    color:red;
+}

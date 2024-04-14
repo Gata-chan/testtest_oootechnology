@@ -1,0 +1,13 @@
+@use './pages/components/stylevariables/variables';
+
+.my-app-page {
+    font-family: "WorkSans-Regular";
+    text-align: center;
+    h1{
+        color: variables.$color-feldgrau;
+    }
+    h2 {
+        font-family: "WorkSans-Light";
+        color: variables.$color-silver;
+    }
+}
